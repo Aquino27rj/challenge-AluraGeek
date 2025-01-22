@@ -12,11 +12,6 @@ O objetivo deste desafio é fornecer a oportunidade de colocar em prática de fo
 - CSS
 - JavaScript
 
-## Link do Projeto
-
-[Visualizar Projeto](https://aquino27rj.github.io/challenge-AluraGeek/)
-
-
 
 ## Autor
 
