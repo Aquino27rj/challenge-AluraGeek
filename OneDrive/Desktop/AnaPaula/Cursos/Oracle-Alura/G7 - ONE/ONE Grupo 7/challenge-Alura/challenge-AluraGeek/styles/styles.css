@@ -1,0 +1,209 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+header {
+    text-align: center;
+    padding: 0px 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header img {
+    width: 100%;
+    height: auto;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px 40px; /* Diminuir as margens */
+    flex-wrap: wrap;
+    gap: 20px; /* Diminuir o gap */
+}
+
+.products {
+    background-color: #fff;
+    padding: 20px; /* Diminuir o padding */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    flex: 1; /* Ajustar o Flexbox para ocupar o espaço disponível */
+    height: 1115px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Diminuir o gap */
+    overflow-y: auto;
+}
+
+.product-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.product-card {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-container--info {
+    margin-top: 10px;
+}
+
+.card-container--value {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.card-container--value p {
+    margin-right: 10px;
+}
+
+.card-container--value img {
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+
+.product-card img {
+    max-width: 100%;
+    height: auto;
+}
+
+.no-products {
+    display: none;
+    text-align: center;
+    color: #666;
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+    margin-top: 20px;
+}
+
+p {
+    color: #666;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.form-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-buttons button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.form-buttons button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.form-buttons button[type="reset"] {
+    background-color: #f44336;
+    color: white;
+}
+
+footer {
+    text-align: center;
+    padding: 64px 64px;
+    background-color: #fff;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+
+footer img {
+    width: 100%;
+    height: auto;
+}
+
+/* Responsividade */
+
+/* Para Tablets */
+@media (max-width: 1024px) and (min-width: 768px) {
+    .products, .form {
+        width: 100%;
+    }
+
+    .product-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Para Celulares */
+@media (max-width: 767px) {
+    .products, .form {
+        width: 100%;
+    }
+
+    .product-list {
+        grid-template-columns: 1fr;
+    }
+
+    .form-buttons {
+        flex-direction: column;
+    }
+
+    .form-buttons button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .form-buttons button:last-child {
+        margin-bottom: 0;
+    }
+}
+
+/* Especificações do Figma */
+.form {
+    background-color: #fff;
+    padding: 20px; /* Diminuir o padding */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 400px; /* Ajustar o tamanho conforme necessário */
+    height: auto;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Diminuir o gap */
+    flex: 1; /* Ajustar o Flexbox para ocupar o espaço disponível */
+}
